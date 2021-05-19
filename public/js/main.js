@@ -4,7 +4,7 @@ let loading = false;
 
 const getVideosFromBackend = async () => {
   loading = true;
-  const res = await fetch("http://localhost:5000/videos");
+  const res = await fetch("https://notion-video-schedule.herokuapp.com/videos");
   const data = res.json();
   loading = false;
   return data;
